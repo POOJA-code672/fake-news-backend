@@ -18,6 +18,10 @@ vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 def home():
     return "Backend is running ✅"
 
+@app.route("/")
+def home():
+    return "Fake News API is running 🚀"
+
 # ✅ Prediction route
 @app.route("/predict", methods=["POST"])
 def predict():
